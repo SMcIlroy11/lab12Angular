@@ -1,0 +1,43 @@
+body {
+  background-color: #ccffcc;
+}
+
+p {
+  color: black;
+}
+
+.bButton {
+  background-color: lightblue;
+}
+
+.gButton {
+  background-color: lightpink;
+}
+
+h1 {
+  text-align: center;
+}
+
+
+
+
+.input-left-col {
+  display: inline-block;
+  margin-left: 25%;
+}
+
+.input-right-col {
+  display: inline-block;
+  /*float: right;*/
+  margin-left: 10%;
+}
+
+/*.clearFix {
+clear: both;*/
+
+
+/**/
+.container3 {
+  background-color: lightblue;
+
+}

@@ -3,29 +3,57 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Document</title>
+  <title>Baby Names 2016</title>
 
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body ng-controller="lab12Ctrl">
+  <div class="container1">
+    <h1>Top Baby Names 2016</h1>
 
-<h2>Popular baby names 2016</h2>
+  </div>
+  <div class="container2">
+    <div class="input-left-col">
+      <input type="text" ng-model="gName" placeholder="Name">
 
-<input type="text" ng-model="name" placeholder="Name">
+      <button class="gButton" ng-click=addGName(gName) type="button">Add your favorite name</button>
+      <br>
+      <br>
 
-<button ng-click=addName(name) type="button">Add</button>
-<br>
-<br>
+      <input type="text" ng-model="gSearch" placeholder="Search for your favorite name!">
 
-<input type="text" ng-model="search" placeholder="Search for your favorite name!">
+      <p> Most Popular Names for Girls </p>
+      <ol>
+        <li ng-repeat="name in gNames | filter: gSearch"> {{name}}</li>
+
+      </ol>
+
+    </div>
+
+    <div class="input-right-col">
+
+      <input type="text" ng-model="bName" placeholder="Name">
+
+      <button class="bButton" ng-click=addBName(bName) type="button"> Add your favorite name</button>
+      <br>
+      <br>
+
+      <input type="text" ng-model="bSearch" placeholder="Search for your favorite name!">
+
+      <p> Most Popular Names for Boys </p>
+      <ol>
+        <li ng-repeat="name in bNames | filter: bSearch"> {{name}}</li>
+      </ol>
+    </div>
+  </div>
 
 
 
-<p ng-repeat = "name in names | filter: search"> {{name}}</p>
+  <div class="container3">
 
-
-
-
+<p>This is a test</p>
+  </div>
 
 
 

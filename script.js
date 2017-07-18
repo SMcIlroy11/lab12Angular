@@ -3,14 +3,21 @@ var app= angular.module('lab12', []);
 app.controller('lab12Ctrl', function($scope) {
 
 
- // $scope.names = ['Katie', 'Stephanie', 'Susan', 'Sydney'];
 
- $scope.names = ['Katherine', 'Stephanie', 'Sydney'];
+ $scope.gNames = ['Sophia', 'Emma', 'Olivia', 'Ava', 'Mia', 'Isabella', 'Riley', 'Aria', 'Zoe', 'Charlotte'];
 
- $scope.addName =function(name) {
+ $scope.addGName =function(name) {
 
-$scope.names.push(name);
+$scope.gNames.push(name);
 
+
+};
+
+$scope.bNames = ['Jackson', 'Aiden', 'Lucas', 'Liam', 'Noah', 'Ethan','Mason', 'Caden', 'Oliver', 'Elijah'];
+
+$scope.addBName =function(name) {
+
+$scope.bNames.push(name);
 
 };
 
