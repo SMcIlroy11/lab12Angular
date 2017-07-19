@@ -17,14 +17,14 @@ p {
 
 
 h1 {
-  /*text-align: center;*/
-  margin: 0 auto;
+  text-align: center;
+
   color: white;
   font-family: 'Bellefair', serif;
   font-size: 250%;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-  display: inline-block;
-  position: relative;
+
+
 }
 
 li {
@@ -55,7 +55,14 @@ width: 60%;
 }
 .image-header {
   width: 10%;
-position: relative;
+position: absolute;
+margin-left: 5%;
+}
+
+.image-header2 {
+  width: 10%;
+position: absolute;
+margin-left: 82%;
 }
 
 .input-right-col {
@@ -83,15 +90,21 @@ position: relative;
   display: block;
 }
 
-  .input-left-col {
-    display: block;
-    margin: 0 auto;
-  }
+.input-left-col {
+  display: inline-block;
+  float: left;
+  margin-left: 5%;
+}
 
-  .input-right-col {
-    display: block;
-    margin: 0 auto;
-  }
+.input-right-col {
+  display: inline-block;
+  float: right;
+  margin-right: 5%;
+}
+
+.clearFix {
+  clear: both;
+}
 
 }
 
@@ -106,7 +119,26 @@ position: relative;
       margin: 0 auto;
     }
 
+    .container2 {
+      display: block;
+    }
 
+    .input-left-col {
+      display: inline-block;
+      float: left;
+      margin-left: 5%;
+    }
+
+    .input-right-col {
+      display: inline-block;
+      float: right;
+      margin-right: 5%;
+    }
+
+    .clearFix {
+      clear: both;
+    }
+}
 
  @media only screen and (min-width: 1024px){
    .image {
@@ -121,13 +153,13 @@ position: relative;
    .input-left-col {
      display: inline-block;
      float: left;
-     margin-left: 25%;
+     margin-left: 20%;
    }
 
    .input-right-col {
      display: inline-block;
      float: right;
-     margin-right: 25%;
+     margin-right: 20%;
    }
 
    .clearFix {
