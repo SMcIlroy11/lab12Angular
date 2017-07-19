@@ -4,6 +4,7 @@ body {
 
 p {
   color: black;
+  font-family: 'Bellefair', serif;
 }
 
 .bButton {
@@ -14,30 +15,130 @@ p {
   background-color: lightpink;
 }
 
+
 h1 {
-  text-align: center;
+  /*text-align: center;*/
+  margin: 0 auto;
+  color: white;
+  font-family: 'Bellefair', serif;
+  font-size: 250%;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  display: inline-block;
+  position: relative;
 }
 
+li {
+  font-family: 'Bellefair', serif;
+}
 
+.button-left {
+  margin-left: 10%;
+}
 
+.search {
+width: 60%;
+}
+
+.removeG {
+  background-color: lightpink;
+
+}
+
+.removeB {
+  background-color: lightblue;
+}
 
 .input-left-col {
   display: inline-block;
-  margin-left: 25%;
+  float: left;
+  margin-left: 10%;
+}
+.image-header {
+  width: 10%;
+position: relative;
 }
 
 .input-right-col {
   display: inline-block;
-  /*float: right;*/
-  margin-left: 10%;
+  float: right;
+  margin-right: 10%;
 }
 
-/*.clearFix {
-clear: both;*/
+.clearFix {
+  clear: both;
+}
+
+@media only screen and (min-width: 480px) {
+  .image {
+    display: block;
+    width: 30%;
+    height: 80px;
+    -moz-box-shadow: 0 0 20px #777777;
+    -webkit-box-shadow: 0 0 20px #777777;
+    box-shadow: 0 0 20px #777777;
+    margin: 0 auto;
+  }
+
+.container2 {
+  display: block;
+}
+
+  .input-left-col {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .input-right-col {
+    display: block;
+    margin: 0 auto;
+  }
+
+}
+
+  @media only screen and (min-width: 768px){
+    .image {
+      display: block;
+      width: 50%;
+      height: 200px;
+      -moz-box-shadow: 0 0 20px #777777;
+      -webkit-box-shadow: 0 0 20px #777777;
+      box-shadow: 0 0 20px #777777;
+      margin: 0 auto;
+    }
 
 
-/**/
+
+ @media only screen and (min-width: 1024px){
+   .image {
+     display: inline-block;
+     width: 19.7%;
+     height: 160px;
+     -moz-box-shadow: 0 0 20px #777777;
+     -webkit-box-shadow: 0 0 20px #777777;
+     box-shadow: 0 0 20px #777777;}
+
+   }
+   .input-left-col {
+     display: inline-block;
+     float: left;
+     margin-left: 25%;
+   }
+
+   .input-right-col {
+     display: inline-block;
+     float: right;
+     margin-right: 25%;
+   }
+
+   .clearFix {
+     clear: both;
+   }
+
+
 .container3 {
-  background-color: lightblue;
 
+  display: inline-block;
+  height: 160px;
+
+}
 }

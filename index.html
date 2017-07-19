@@ -2,7 +2,9 @@
 <html ng-app="lab12" lang="en">
 
 <head>
+  <meta name="viewport" content="width=device-width">
   <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Bellefair" rel="stylesheet">
   <title>Baby Names 2016</title>
 
   <link rel="stylesheet" href="styles.css">
@@ -10,24 +12,29 @@
 
 <body ng-controller="lab12Ctrl">
   <div class="container1">
-    <h1>Top Baby Names 2016</h1>
+<img class="image-header" src="https://s-media-cache-ak0.pinimg.com/originals/24/6b/c2/246bc2d7d9c07ee2073637b38542316b.png" alt="">
+    <h1>Your Top 10 Baby Names 2016</h1>
+    <img class="image-header" src="https://s-media-cache-ak0.pinimg.com/originals/24/6b/c2/246bc2d7d9c07ee2073637b38542316b.png" alt="">
 
   </div>
   <div class="container2">
     <div class="input-left-col">
+
       <input type="text" ng-model="gName" placeholder="Name">
 
       <button class="gButton" ng-click=addGName(gName) type="button">Add your favorite name</button>
       <br>
       <br>
 
-      <input type="text" ng-model="gSearch" placeholder="Search for your favorite name!">
+      <input class ="search" type="text" ng-model="gSearch" placeholder="Search for your favorite name!">
 
-      <p> Most Popular Names for Girls </p>
+      <p> <u>Most Popular Names for Girls</u> </p>
+
       <ol>
-        <li ng-repeat="name in gNames | filter: gSearch"> {{name}}</li>
+        <li ng-repeat="name in gNames | filter: gSearch"> {{name}} <button class="removeG" type="button" ng-click="removeGName(name)">Remove name</button></li>
 
       </ol>
+
 
     </div>
 
@@ -39,20 +46,26 @@
       <br>
       <br>
 
-      <input type="text" ng-model="bSearch" placeholder="Search for your favorite name!">
+      <input class="search" type="text" ng-model="bSearch" placeholder="Search for your favorite name!">
 
-      <p> Most Popular Names for Boys </p>
+      <p> <u>Most Popular Names for Boys </u></p>
       <ol>
-        <li ng-repeat="name in bNames | filter: bSearch"> {{name}}</li>
+        <li ng-repeat="name in bNames | filter: bSearch"> {{name}} <button class= "removeB" type="button" ng-click="removeBName(name)">Remove name</button></li>
       </ol>
     </div>
   </div>
 
+<div class="clearFix">
 
+</div>
 
   <div class="container3">
 
-<p>This is a test</p>
+<img class="image" id="image1" src="https://assets.babycenter.com/ims/2016/10/iStock_43693432_4x3.jpg" alt="baby1">
+<img class="image" src="http://static.kidspot.com.au/cm_assets/5991/australias-top-100-baby-names-20130402103500.jpg~q75,dx720y432u1r1gg,c--.jpg" alt="baby2">
+<img class="image" src="https://image.rewardme.in/Assets/Modules/Editorial/Article/Images/baby-clothes-baby-friendly-with-these-10-washing-tips-2-size-3.jpg" alt="baby3">
+<img class="image" src="https://assets.babycenter.com/ims/2016/11/iStock_67786873_wide.jpg?width=580" alt="baby4">
+<img class="image" id="image5" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrY2Bk6Y0PXgJajbOndj1gpx-3CJbp9upsypaLv4czpt5TSC9h" alt="baby5">
   </div>
 
 
